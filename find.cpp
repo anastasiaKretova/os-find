@@ -106,6 +106,7 @@ struct Worker {
                 }
             }
         }
+        closedir(dir);
     }
 
     bool checkFile(std::string const &path, struct stat const &fileStat) {
